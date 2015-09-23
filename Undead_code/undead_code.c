@@ -17,7 +17,12 @@ void segment_fault_handler(int signum)
 
 	char *p = (char *)&signum;
 	//printf("0x%02x%02x%02x%02x\n", p[63],p[62],p[61],p[60]);
-	p[60] += 0x05;
+	/* running instructions
+	 * for my laptop and vi.cs.rutgers.edu this needs to be 0x02
+	 * for my Desktop running ubuntu 15.04 it needs to be 0x05
+	 *
+	 */
+	p[60] += 0x02;
 	//printf("0x%02x%02x%02x%02x\n", p[63],p[62],p[61],p[60]);
 	printf("I am slain!\n");
 	//exit(0);
