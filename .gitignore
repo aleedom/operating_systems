@@ -1,2 +1,3 @@
 *.s
 undead_code
+*.gdb_history
