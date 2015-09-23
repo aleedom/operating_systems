@@ -6,7 +6,7 @@
 //                               signal handler self-hack
 
 // Student name: Andrew Leedom
-// Ilab machine used:  Personal Computer Running ubuntu 15.04
+// Ilab machine used:  vi.cs.rutgers.edu
 
 #include <signal.h>
 #include <stdio.h>
